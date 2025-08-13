@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bahromjon — Shaxsiy sayt</title>
+  <meta name="description" content="Bahromjonning shaxsiy sahifasi: portfolio, xizmatlar va aloqa.">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container">
+      <div class="brand">Bahromjon</div>
+      <nav class="menu">
+        <a href="#xizmatlar">Xizmatlar</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#aloqa" class="btn">Bog'lanish</a>
+      </nav>
+      <button id="menuToggle" aria-label="Menyuni ochish">&#9776;</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Salom! Men <span>Bahromjon</span></h1>
+      <p>Veb-sayt va landing sahifalar yarataman. Tez, zamonaviy va moslashuvchan (responsive) dizayn.</p>
+      <div class="cta">
+        <a href="#xizmatlar" class="btn">Xizmatlarim</a>
+        <a href="https://t.me/MengliyevBahrom" target="_blank" rel="noopener" class="btn ghost">Telegram</a>
+      </div>
+    </div>
+    <div class="waves" aria-hidden="true">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,256L60,245.3C120,235,240,213,360,186.7C480,160,600,128,720,122.7C840,117,960,139,1080,154.7C1200,171,1320,181,1380,186.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <section id="xizmatlar" class="section">
+    <div class="container">
+      <h2>Xizmatlar</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Landing sahifa</h3>
+          <p>Mahsulot yoki xizmat uchun konvertatsiya yuqori bo'lgan bitta sahifali sayfalar.</p>
+        </div>
+        <div class="card">
+          <h3>Portfolio</h3>
+          <p>Shaxsiy ishlaringizni chiroyli ko'rsatadigan portfoliolar.</p>
+        </div>
+        <div class="card">
+          <h3>Biznes sayt</h3>
+          <p>Kichik biznes uchun tezkor va oddiy korporativ saytlar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section alt">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="grid work">
+        <a class="work-item" href="#" aria-label="Misol loyiha 1">
+          <div class="work-thumb"></div>
+          <div class="work-meta">
+            <strong>Misol loyiha 1</strong>
+            <span>Landing • 2025</span>
+          </div>
+        </a>
+        <a class="work-item" href="#" aria-label="Misol loyiha 2">
+          <div class="work-thumb"></div>
+          <div class="work-meta">
+            <strong>Misol loyiha 2</strong>
+            <span>Portfolio • 2025</span>
+          </div>
+        </a>
+        <a class="work-item" href="#" aria-label="Misol loyiha 3">
+          <div class="work-thumb"></div>
+          <div class="work-meta">
+            <strong>Misol loyiha 3</strong>
+            <span>Biznes sayti • 2025</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="aloqa" class="section contact">
+    <div class="container">
+      <h2>Bog'lanish</h2>
+      <p>Buyurtma va savollar uchun quyidagi formani to'ldiring yoki Telegram orqali yozing.</p>
+      <form id="contactForm">
+        <div class="form-grid">
+          <label>
+            <span>Ismingiz</span>
+            <input type="text" name="name" placeholder="Ism Familya" required />
+          </label>
+          <label>
+            <span>Telefon</span>
+            <input type="tel" name="phone" placeholder="+998 ** *** ** **" required />
+          </label>
+          <label class="full">
+            <span>Xabar</span>
+            <textarea name="message" rows="4" placeholder="Loyihangiz haqida qisqacha yozing" required></textarea>
+          </label>
+        </div>
+        <button type="submit" class="btn">Yuborish</button>
+        <p id="formMsg" class="muted"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Bahromjon. Barcha huquqlar himoyalangan.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
